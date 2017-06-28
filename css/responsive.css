@@ -1,0 +1,39 @@
+ /*-------cusom responsive sytyle css---*/
+ 
+@media (max-width: 766px) {
+ .logo img {
+    margin: 20px auto;
+}
+.right-top-button {
+    display: block;
+    float: none;
+    margin: auto;
+    text-align: center;
+}
+.right-top-button li a{
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.tagline {
+ 
+    margin: 20px 0 0;
+   
+    text-align: center;
+}
+ 
+.left-collapse{
+padding-right: 15px !important;    
+}
+.right-collapse{
+    padding-left: 15px !important;
+}
+  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
