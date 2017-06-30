@@ -1,1 +1,16 @@
  
+ .btn-custom {
+    background: #6aa018 -moz-linear-gradient(center top , #7cb91c 0px, #6aa018 100%) repeat-x scroll 0 0;
+    border-color: #496f11;
+    color: #fff;
+    text-shadow: 1px 1px 1px #496f11;
+     -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation-delay: 3s;
+    margin-top: -4px;
+}
+ 
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active {
+    background: #6aa018 none repeat scroll 0 -30px;
+    border-color: #496f11;
+    color: #fff;
+} 

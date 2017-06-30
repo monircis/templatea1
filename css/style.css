@@ -1,30 +1,72 @@
-@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-html,
-body {
+html,body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  font: normal 14px arial,sans-serif;
+ font-family: Open Sans;
+ font-size: 15px;
 }
- 
+h1,h2,h3,h4,h5,h6{
+    
+    font-family: 'Open Sans', sans-serif;
+
+} 
+p,span{
+     font-family: Lato;
+}
 
 
 #wrapper {
   height: 100%;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
+  margin: 0 auto;
+ 
 }
-
-
 header {
+  position: relative;
   
 }
+.fix-banner img{
+  object-fit: cover;
+  width: 100%;
+  height:  auto;
+  max-height: 700px;
+  image-resolution: from-image;
+}
+.caption{
+    width: 100%;
+  text-align: center;
+    position:  absolute;
+    z-index: 1000;
+     color: #fff;
+    top: 30%;
+    }
+    .caption .jumbotron h1 span{
+        font-size: 60px;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 0px rgb(102, 102, 102);
+        margin-bottom: 2px;
+    }
+.caption span{
+   text-shadow: 3px 3px 0px rgba(102, 102, 102);
+    font-size: 25px;
+}
+ .caption .jumbotron{
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    
+ }
  
+ /*---------menu  css  start--------*/
+
 
 #nav {
   width: 100%;
   position:static;
   top:-32px;
+  color: #666666;
+  background-image: url("../img/mainBg_w.png");
 }
 
 #nav.affix {
@@ -33,6 +75,19 @@ header {
    z-index:10;
    -webkit-transition: all .6s ease-in-out;
 }
+#nav a{
+     color: #666666;
+} 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
 
 
 
@@ -58,13 +113,7 @@ header {
 
 /* Custom page CSS
 -------------------------------------------------- */
-.masthead img{
-     object-fit: cover;
-  width: 100%;
-  height:  auto;
-  max-height: 700px;
-  image-resolution: from-image;
-}
+
 
 #wrap > .container {
   padding: 60px 15px 0;
@@ -81,11 +130,7 @@ header {
   color:#efefef;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'Kreon', serif;
-  vertical-align:middle;
-}
- 
+  
 @media (min-width: 767px) {
   .navbar-nav.nav-justified > li{
       float:none;
@@ -97,7 +142,7 @@ h1,h2,h3,h4 {
   
 /* customize nav style */
 .navbar-custom {
-    background-color: #2e2e2e;
+    
 	font-weight:700;
     text-transform:uppercase;
     border-width:0;
@@ -146,7 +191,7 @@ h1,h2,h3,h4 {
 }
 
 .scroll-top {
-   position:fixed;
+    
    bottom:0;
    right:6%;
    z-index:100;
